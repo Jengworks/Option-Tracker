@@ -1,0 +1,52 @@
+.header-objects {
+    display: inline;
+    border: 1px solid red;
+    width: 60px;
+    height: 60px;
+    /* height: 10vh; */
+}
+
+.header-objects-hover:hover {
+    background-color: #414049;
+    color: white;
+  }
+
+.portfolio-name {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color:#E6E1E5;
+
+}
+
+.icon-hamburger{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition-duration: 0.4s;
+
+}
+
+.icon-hamburger-img {
+    padding: 20px;
+
+}
+
+.icon-person {
+    position: absolute; 
+    top: 0px;
+    right: 0px;
+
+}
+
+.icon-person-img {
+    padding: 15px;
+}
+  
