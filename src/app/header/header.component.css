@@ -1,12 +1,12 @@
-.header-objects {
+.header-object {
     display: inline;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 60px;
     height: 60px;
     /* height: 10vh; */
 }
 
-.header-objects-hover:hover {
+.header-object-hover:hover {
     background-color: #414049;
     color: white;
   }
@@ -21,7 +21,7 @@
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     color:#E6E1E5;
 
 }
