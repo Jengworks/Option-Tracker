@@ -1,6 +1,24 @@
+.open-trade-view {
+    display: flex;
+    flex-flow: column;
+    height: 100%; /* child of body height? */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Header stuff */
+
+.open-trade-header {
+    display: flex;
+    flex-flow: row;
+    border: 1px solid red;
+    height: 60px;
+    justify-content: space-between;
+}
+
 .open-trades-object {
-    display: inline;
-    position: absolute;
     font-family: Roboto;
     font-style: normal;
     color: #D0BCFF;
@@ -32,4 +50,20 @@
     height: 30px;
 }
 
+/* End of Header stuff */
 
+/* List stuff */
+
+.open-trade-list {
+    flex: 1 1 auto;
+    /* display: flex; */
+    /* flex-flow: column; */
+    border: 1px solid red;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .open-trade-view {
+        width: 100%;
+    }
+  }

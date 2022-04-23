@@ -1,6 +1,18 @@
-<div class="open-trades-object open-trades-title">
-    <p>Open Trades</p>
-</div>
-<div class="open-trades-object add-new-trade">
-    <img class='add-new-trade-img' src="assets/add-new-trade.svg">
+<div class="open-trade-view">
+    <div class="open-trade-header">
+        <div class="open-trades-object open-trades-title">
+            <p>Open Trades</p>
+        </div>
+        <div class="open-trades-object add-new-trade">
+            <img src="assets/add-new-trade.svg">
+        </div>
+    </div>
+    <div class="open-trade-list" *ngFor="let record of records">
+        <button>
+            <span>{{record.date}}</span><br>
+            <span>{{record.action}}</span><br>
+            <span>{{record.ticker}}</span><br>
+            <span>{{record.contracts}}</span><br>
+        </button>
+    </div>
 </div>

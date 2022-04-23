@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RECORDS } from '../mock-records';
+import { RecordService } from '../record.service';
 
 @Component({
   selector: 'app-open-trades',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpenTradesComponent implements OnInit {
 
-  constructor() { }
+  records = RECORDS;
+
+  constructor(private recordService: RecordService) {}
+
+  getRecords(): void {
+    this.records = this.recordService.getRecords();
+  }
 
   ngOnInit(): void {
+    this.getRecords();
   }
 
 }
