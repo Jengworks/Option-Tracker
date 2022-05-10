@@ -1,4 +1,5 @@
 .open-trade-view {
+    margin-top: 80px;
     display: flex;
     flex-flow: column;
     height: 100%; /* child of body height? */
@@ -13,7 +14,7 @@
 .open-trade-header {
     display: flex;
     flex-flow: row;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 60px;
     justify-content: space-between;
 }
@@ -55,12 +56,17 @@
 /* List stuff */
 
 .open-trade-list {
-    flex: 1 1 auto;
     /* display: flex; */
     /* flex-flow: column; */
-    border: 1px solid red;
-
+    /* border: 1px solid red; */
 }
+
+.trade-object {
+    border: 1px solid red;
+    color: white;
+    height: 40vh;
+}
+
 
 @media only screen and (max-width: 600px) {
     .open-trade-view {

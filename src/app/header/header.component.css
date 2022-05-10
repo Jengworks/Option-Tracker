@@ -1,8 +1,15 @@
-.header-object {
-    display: inline;
+.header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
     /* border: 1px solid red; */
-    width: 60px;
+}
+
+.header-object {
     height: 60px;
+    /* border: 1px solid red; */
+    /* width: 60px;
+    height: 60px; */
     /* height: 10vh; */
 }
 
@@ -11,14 +18,40 @@
     color: white;
   }
 
-.portfolio-name {
+/* .portfolio-name {
     width: 200px;
     position: absolute;
     left: 50%;
     right: 50%;
     transform: translate(-50%);
     text-align: center;
+} */
+
+.route-header {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.route-icon {
+    color: white;
+    padding: 10px;
+}
+
+.route-icon img:last-child {
+    display: none;
+}
+
+.route-icon:hover img:last-child {
+    display: block;
+}
+
+.route-icon:hover img:first-child {
+    display: none;
+}
+
 
 p {
     font-size: 20px;
